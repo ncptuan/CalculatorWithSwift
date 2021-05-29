@@ -10,8 +10,9 @@ import UIKit
 class ViewController: UIViewController {
     
     @IBOutlet weak var ResultLabel: UILabel!
+    @IBOutlet weak var PortraitView: PortraitModeView!
+    @IBOutlet weak var LanscapeView: PortraitModeView!
     var result = Calculating();
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -27,6 +28,17 @@ class ViewController: UIViewController {
         
     }
     
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+            super.viewWillTransition(to: size, with: coordinator)
+            if UIDevice.current.orientation.isLandscape {
+                PortraitView.isHidden = true
+                LanscapeView.isHidden = false
+            } else {
+                PortraitView.isHidden = false
+                LanscapeView.isHidden = true
+            }
+        }
+    
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent;
     }
@@ -40,6 +52,9 @@ class ViewController: UIViewController {
         sendMessage(Target: sender)
     }
     
+    @IBAction func ExtendFunction(_ sender: Any) {
+        print("Bấm nè");
+    }
     
     
     func sendMessage(Target: UIButton) {
