@@ -22,7 +22,7 @@ class RoundedButton: UIButton{
             layer.cornerRadius = (frame.size.width / 2) * 0.97
         }
     }
-    func updateFont(){
+    func updateFont(){ 
         guard let fnt = titleLabel?.font else {return}
         
         let h = ((bounds.height - 12.0) * (15.0/18.0)).rounded();
