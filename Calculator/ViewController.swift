@@ -12,12 +12,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var ResultLabel: UILabel!
     @IBOutlet weak var PortraitView: PortraitModeView!
     @IBOutlet weak var LanscapeView: PortraitModeView!
+    @IBOutlet weak var testButton: NumberButton!
     var result = Calculating();
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         updateResult(temp: result);
-        ResultLabel.font = UIFont.systemFont(ofSize: ResultLabel.frame.height/2 * 1.25)
+        ResultLabel.font = UIFont.systemFont(ofSize: ResultLabel.frame.height/2)
+        ChoiceOriented();
     }
     
     func updateResult(temp: Calculating) {
@@ -30,13 +32,7 @@ class ViewController: UIViewController {
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
             super.viewWillTransition(to: size, with: coordinator)
-            if UIDevice.current.orientation.isLandscape {
-                PortraitView.isHidden = true
-                LanscapeView.isHidden = false
-            } else {
-                PortraitView.isHidden = false
-                LanscapeView.isHidden = true
-            }
+            ChoiceOriented();
         }
     
     override var preferredStatusBarStyle: UIStatusBarStyle{
@@ -50,10 +46,6 @@ class ViewController: UIViewController {
     @IBAction func HoldDown(_ sender: UIButton) {
         ChangeColorWhenPress(Target: sender)
         sendMessage(Target: sender)
-    }
-    
-    @IBAction func ExtendFunction(_ sender: Any) {
-        print("Bấm nè");
     }
     
     
@@ -136,6 +128,7 @@ class ViewController: UIViewController {
             updateResult(temp: result);
             break;
         default:
+            print("extend function was clicked");
             break;
         }
     }
@@ -153,6 +146,16 @@ class ViewController: UIViewController {
         }
         if (type(of: Target) == type(of: FunctionButton())) {
             Target.backgroundColor = Theme.functionButtonBackgroundColor
+        }
+    }
+    
+    func ChoiceOriented() {
+        if UIDevice.current.orientation.isLandscape {
+            PortraitView.isHidden = true
+            LanscapeView.isHidden = false
+        } else {
+            PortraitView.isHidden = false
+            LanscapeView.isHidden = true
         }
     }
 }

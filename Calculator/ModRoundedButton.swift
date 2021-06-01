@@ -8,11 +8,17 @@
 import Foundation
 import UIKit
 
+
+extension UIButton{
+    open override func layoutSubviews() {
+        titleLabel?.font = UIFont.systemFont(ofSize: 500)
+    }
+}
 class RoundedButton: UIButton{
     override func layoutSubviews() {
         super.layoutSubviews();
         updateCornerRadius();
-//        updateFont()
+        updateFont()
     }
 
     func updateCornerRadius() {
@@ -21,6 +27,8 @@ class RoundedButton: UIButton{
         }else{
             layer.cornerRadius = (frame.size.width / 2) * 0.97
         }
+        titleLabel!.font = UIFont.preferredFont(forTextStyle: .body)
+        titleLabel!.adjustsFontForContentSizeCategory = true
     }
     func updateFont(){ 
         guard let fnt = titleLabel?.font else {return}
@@ -28,7 +36,7 @@ class RoundedButton: UIButton{
         let h = ((bounds.height - 12.0) * (15.0/18.0)).rounded();
         let fs = fnt.pointSize
         if h != fs {
-            titleLabel?.font = UIFont(descriptor: fnt.fontDescriptor, size: h)
+//            titleLabel?.font = UIFont.systemFont(ofSize: 500)
         }
     }
 }
