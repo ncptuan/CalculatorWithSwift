@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,32 +13,32 @@
             <objects>
                 <viewController storyboardIdentifier="SideMenuID" id="eyd-ni-hpb" customClass="SideMenuController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qCp-VM-MGa">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8kD-Aa-xpF">
-                                <rect key="frame" x="0.0" y="20" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="20" width="896" height="30"/>
                                 <state key="normal" title="Default Theme"/>
                                 <connections>
                                     <action selector="DefaultTheme:" destination="eyd-ni-hpb" eventType="touchUpInside" id="zC9-OP-eeK"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kqh-cN-Sch">
-                                <rect key="frame" x="0.0" y="58" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="58" width="896" height="30"/>
                                 <state key="normal" title="Theme 1"/>
                                 <connections>
                                     <action selector="LightTheme:" destination="eyd-ni-hpb" eventType="touchUpInside" id="4jM-JU-D7K"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRU-kO-gUB">
-                                <rect key="frame" x="0.0" y="96" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="96" width="896" height="30"/>
                                 <state key="normal" title="Theme 2"/>
                                 <connections>
                                     <action selector="LightTheme2:" destination="eyd-ni-hpb" eventType="touchUpInside" id="TnH-w5-0AZ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dmG-S7-CzA">
-                                <rect key="frame" x="0.0" y="134" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="134" width="896" height="30"/>
                                 <state key="normal" title="Return"/>
                                 <connections>
                                     <action selector="ReturnToMainView:" destination="eyd-ni-hpb" eventType="touchUpInside" id="9k3-ul-YSm"/>
@@ -76,14 +76,14 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Calculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="onB-lt-T9O" userLabel="ResulltView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="240.5"/>
+                                <rect key="frame" x="44" y="0.0" width="808" height="118.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwT-rI-jaf">
-                                        <rect key="frame" x="0.0" y="120.5" width="414" height="120"/>
+                                        <rect key="frame" x="0.0" y="59" width="808" height="59.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -111,18 +111,18 @@
                                 </constraints>
                             </view>
                             <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4q4-uA-Qxi" userLabel="LanscapeView" customClass="PortraitModeView" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="240.5" width="414" height="601.5"/>
+                                <rect key="frame" x="44" y="118.5" width="808" height="295.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="JmW-xh-siH" userLabel="ManageButtonView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="516"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="210"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="9" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bb7-EP-4OX" userLabel="Row1">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="808" height="34.5"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z96-4a-J8i" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="("/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="i6O-yf-X3c"/>
@@ -130,9 +130,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FXn-0i-f4z" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="42.5" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="81.5" y="0.0" width="73" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title=")"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="FGV-Jd-bFK"/>
@@ -140,9 +140,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fsb-GC-YqY" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="84.5" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="163.5" y="0.0" width="72.5" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="mc"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="V3a-ll-dMQ"/>
@@ -150,9 +150,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X4e-Pb-zUY" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="127" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="245" y="0.0" width="73" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="m+"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="MJ7-KH-k0J"/>
@@ -160,9 +160,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EiK-iq-yid" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="169" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="327" y="0.0" width="72.5" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="m-"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="abt-QW-rYl"/>
@@ -170,9 +170,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qjh-vc-atY" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="211.5" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="408.5" y="0.0" width="72.5" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="mr"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="4vn-XF-aYV"/>
@@ -180,9 +180,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEU-C0-3XV" customClass="FunctionButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="254" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="490" y="0.0" width="73" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="AS"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="F3A-Gt-vwp"/>
@@ -190,9 +190,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6V-gO-ZqB" customClass="FunctionButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="296" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="572" y="0.0" width="72.5" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="+/-"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="zUY-br-8VS"/>
@@ -200,9 +200,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gSK-wT-7SQ" customClass="FunctionButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="338.5" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="653.5" y="0.0" width="73" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="%"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="lcL-JZ-krz"/>
@@ -210,9 +210,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="csz-9g-bAR" customClass="CalculationButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="380.5" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="735.5" y="0.0" width="72.5" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="/"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="mAU-fZ-bea"/>
@@ -234,12 +234,12 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="9" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xcv-v1-hLJ" userLabel="Row2">
-                                                <rect key="frame" x="0.0" y="105" width="414" height="96"/>
+                                                <rect key="frame" x="0.0" y="43.5" width="808" height="35"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="myD-Kk-d4g" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="2ⁿᵈ"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="vq7-hA-tZE"/>
@@ -247,9 +247,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C38-PE-J7T" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="42.5" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="81.5" y="0.0" width="73" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="X²"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="YDz-SK-4qk"/>
@@ -257,9 +257,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hcU-91-Ne8" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="84.5" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="163.5" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="X³"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="36J-zx-fK4"/>
@@ -267,9 +267,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IfQ-xT-mpS" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="127" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="245" y="0.0" width="73" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="xʸ"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Xa8-C7-Gt0"/>
@@ -277,9 +277,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uHa-Hz-4VN" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="169" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="327" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="eˣ"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Grf-2U-xVm"/>
@@ -287,9 +287,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nA4-YO-Gu0" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="211.5" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="408.5" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="10ˣ"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="r6N-DR-hqa"/>
@@ -297,9 +297,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Ch-ot-3Dc" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="254" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="490" y="0.0" width="73" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="7"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="qS0-F9-J4i"/>
@@ -307,9 +307,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lcK-hm-60d" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="296" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="572" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="8"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="QuG-eb-qU4"/>
@@ -317,9 +317,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Ar-af-GBK" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="338.5" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="653.5" y="0.0" width="73" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="9"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="sWQ-ta-sGY"/>
@@ -327,9 +327,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kK3-Nz-lla" customClass="CalculationButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="380.5" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="735.5" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="x"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="KxI-9w-KLb"/>
@@ -351,12 +351,12 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="9" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d8K-bC-qZY" userLabel="Row3">
-                                                <rect key="frame" x="0.0" y="210" width="414" height="96"/>
+                                                <rect key="frame" x="0.0" y="87.5" width="808" height="35"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0fk-GU-eSF" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="1/x"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="gZr-oe-OBw"/>
@@ -364,9 +364,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jG6-2S-7VF" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="42.5" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="81.5" y="0.0" width="73" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="√x"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="ZT4-v8-Q3T"/>
@@ -374,9 +374,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oVt-CF-u0n" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="84.5" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="163.5" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="³√x"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="XQg-lt-6Bj"/>
@@ -384,9 +384,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZt-OR-Xiw" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="127" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="245" y="0.0" width="73" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="ʸ√x"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="GfB-SH-XoC"/>
@@ -394,9 +394,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2L-R0-fyI" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="169" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="327" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="ln"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="9bk-Hp-XyA"/>
@@ -404,9 +404,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZJ9-Hq-LHT" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="211.5" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="408.5" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="log₁₀"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="TXC-3H-Dm1"/>
@@ -414,9 +414,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Akv-aV-lCh" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="254" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="490" y="0.0" width="73" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="4"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="c25-5p-fSx"/>
@@ -424,9 +424,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FV-io-g8o" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="296" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="572" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="5"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="yBD-Dl-KV5"/>
@@ -434,9 +434,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2bX-5S-OVt" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="338.5" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="653.5" y="0.0" width="73" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="6"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="dyM-tI-xE9"/>
@@ -444,9 +444,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyv-YI-dLY" customClass="CalculationButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="380.5" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="735.5" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="eEw-1n-FPE"/>
@@ -468,12 +468,12 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="9" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bkh-Rm-TtO" userLabel="Row4">
-                                                <rect key="frame" x="0.0" y="315" width="414" height="96"/>
+                                                <rect key="frame" x="0.0" y="131.5" width="808" height="34.5"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fuc-XV-vcb" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="x!"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="hLE-Q1-H36"/>
@@ -481,9 +481,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VbI-1q-ifJ" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="42.5" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="81.5" y="0.0" width="73" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="Sin"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="dV7-Pu-Tyh"/>
@@ -491,9 +491,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ceU-LN-x8x" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="84.5" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="163.5" y="0.0" width="72.5" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="Cos"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="prg-oC-jFT"/>
@@ -501,9 +501,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Le-2P-UU7" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="127" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="245" y="0.0" width="73" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="Tan"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="E8i-iU-Hxc"/>
@@ -511,9 +511,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oAU-si-oz8" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="169" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="327" y="0.0" width="72.5" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="e"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="OOR-0y-K2k"/>
@@ -521,9 +521,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EHT-Al-hlz" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="211.5" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="408.5" y="0.0" width="72.5" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="EE"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="q1w-tG-ebK"/>
@@ -531,9 +531,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vb3-KI-rdX" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="254" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="490" y="0.0" width="73" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="1"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="tqU-ZL-yIn"/>
@@ -541,9 +541,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fRW-os-eHh" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="296" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="572" y="0.0" width="72.5" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="2"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="M0y-Fg-f22"/>
@@ -551,9 +551,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="epF-AO-bZ2" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="338.5" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="653.5" y="0.0" width="73" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="3"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="o6T-G0-gGr"/>
@@ -561,9 +561,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yR2-re-uYe" customClass="CalculationButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="380.5" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="735.5" y="0.0" width="72.5" height="34.5"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="+"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="k0f-3x-fAd"/>
@@ -585,12 +585,12 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="9" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="qKk-fd-zWd" userLabel="Row5">
-                                                <rect key="frame" x="0.0" y="420" width="414" height="96"/>
+                                                <rect key="frame" x="0.0" y="175" width="808" height="35"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hQR-BJ-LrX" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="Rad"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="eXK-8O-B3l"/>
@@ -598,9 +598,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQ9-5O-L01" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="42" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="81.5" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="Sinh"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="d60-zy-oOe"/>
@@ -608,9 +608,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Kc-Tq-fhu" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="84.5" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="163" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="Cosh"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="DPC-fI-B7h"/>
@@ -618,9 +618,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pwt-OJ-l0K" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="126.5" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="244.5" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="Tanh"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="cdg-AV-pMO"/>
@@ -628,9 +628,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uby-t5-MaF" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="168.5" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="326" y="0.0" width="73" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="π"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="QPb-KJ-MYv"/>
@@ -638,9 +638,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yda-3t-qXm" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="211" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="408" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="Rand"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="r09-js-Ae0"/>
@@ -648,9 +648,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jWd-CL-3yx" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="253" y="0.0" width="76.5" height="96"/>
+                                                        <rect key="frame" x="489.5" y="0.0" width="155.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="0"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="aqW-kD-4he"/>
@@ -658,9 +658,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o3g-U3-pQy" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="338.5" y="0.0" width="33.5" height="96"/>
+                                                        <rect key="frame" x="654" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title=","/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="ZU9-XX-ILL"/>
@@ -668,9 +668,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zby-01-3xX" customClass="CalculationButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="381" y="0.0" width="33" height="96"/>
+                                                        <rect key="frame" x="735.5" y="0.0" width="72.5" height="35"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="="/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="0oc-Rd-rlW"/>
@@ -709,18 +709,18 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mQ5-kl-8Ma" userLabel="PortraitView" customClass="PortraitModeView" customModule="Calculator" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="240.5" width="414" height="518.5"/>
+                                <rect key="frame" x="44" y="118.5" width="808" height="225.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="zIk-ai-8vG" userLabel="ManageButtonView">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="518.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="225.5"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="9" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bH2-qT-pU6" userLabel="Row1">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="96.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="808" height="37.5"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oPC-da-noa" customClass="FunctionButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="96.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="195.5" height="37.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="AS"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="NoO-ax-P0w"/>
@@ -728,9 +728,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DDi-nn-YAn" customClass="FunctionButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="106" y="0.0" width="96.5" height="96.5"/>
+                                                        <rect key="frame" x="204.5" y="0.0" width="195" height="37.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="+/-"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Ydn-UV-Ox9"/>
@@ -738,9 +738,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NYW-8A-q42" customClass="FunctionButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="211.5" y="0.0" width="97" height="96.5"/>
+                                                        <rect key="frame" x="408.5" y="0.0" width="195.5" height="37.5"/>
                                                         <color key="backgroundColor" systemColor="systemGrayColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="%"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="nPG-Js-sCA"/>
@@ -748,9 +748,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nzJ-1J-2ll" customClass="CalculationButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="317.5" y="0.0" width="96.5" height="96.5"/>
+                                                        <rect key="frame" x="613" y="0.0" width="195" height="37.5"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="/"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="dmJ-ld-2Ql"/>
@@ -766,12 +766,12 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="YfP-lw-Vfk" userLabel="Row2">
-                                                <rect key="frame" x="0.0" y="105.5" width="414" height="96.5"/>
+                                                <rect key="frame" x="0.0" y="46.5" width="808" height="38"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lBP-sa-71e" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="96.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="195.5" height="38"/>
                                                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
-                                                        <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="7"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="IXu-bg-3IN"/>
@@ -779,9 +779,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="63E-iw-Ruh" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="106" y="0.0" width="96.5" height="96.5"/>
+                                                        <rect key="frame" x="204.5" y="0.0" width="195" height="38"/>
                                                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="8"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="yBj-Sk-Mkd"/>
@@ -789,9 +789,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rlm-cd-0wK" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="211.5" y="0.0" width="97" height="96.5"/>
+                                                        <rect key="frame" x="408.5" y="0.0" width="195.5" height="38"/>
                                                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="9"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="q1u-fj-w42"/>
@@ -799,9 +799,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vcU-NP-GC0" customClass="CalculationButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="317.5" y="0.0" width="96.5" height="96.5"/>
+                                                        <rect key="frame" x="613" y="0.0" width="195" height="38"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="x"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="HOk-rk-lqA"/>
@@ -817,39 +817,32 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="hhP-iB-RU4" userLabel="Row3">
-                                                <rect key="frame" x="0.0" y="211" width="414" height="96.5"/>
+                                                <rect key="frame" x="0.0" y="93.5" width="808" height="38"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="adF-57-ScG" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="96.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="195.5" height="38"/>
                                                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="4"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="02v-QP-1Qp"/>
                                                             <action selector="HoldRelease:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UGe-RJ-3qO"/>
                                                         </connections>
                                                     </button>
-                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rsh-un-WSc" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="106" y="0.0" width="96.5" height="96.5"/>
+                                                    <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rsh-un-WSc" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
+                                                        <rect key="frame" x="204.5" y="0.0" width="195" height="38"/>
                                                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
-                                                        <state key="normal">
-                                                            <attributedString key="attributedTitle">
-                                                                <fragment content="5">
-                                                                    <attributes>
-                                                                        <font key="NSFont" metaFont="system" size="25"/>
-                                                                    </attributes>
-                                                                </fragment>
-                                                            </attributedString>
-                                                        </state>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                        <state key="normal" title="5"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="AYH-ye-wmL"/>
                                                             <action selector="HoldRelease:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7RZ-u1-J3J"/>
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lqM-Sr-uRl" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="211.5" y="0.0" width="97" height="96.5"/>
+                                                        <rect key="frame" x="408.5" y="0.0" width="195.5" height="38"/>
                                                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="6"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="re1-Hp-NBV"/>
@@ -857,9 +850,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0a-Xe-CZO" customClass="CalculationButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="317.5" y="0.0" width="96.5" height="96.5"/>
+                                                        <rect key="frame" x="613" y="0.0" width="195" height="38"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="-"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="ibQ-Ag-d9a"/>
@@ -875,12 +868,12 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="0Hv-x8-fZm" userLabel="Row4">
-                                                <rect key="frame" x="0.0" y="316.5" width="414" height="96.5"/>
+                                                <rect key="frame" x="0.0" y="140.5" width="808" height="38"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kv-kY-VcX" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="97" height="96.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="195.5" height="38"/>
                                                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="1"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Ifa-aU-3nM"/>
@@ -888,9 +881,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpq-AW-TjT" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="106" y="0.0" width="96.5" height="96.5"/>
+                                                        <rect key="frame" x="204.5" y="0.0" width="195" height="38"/>
                                                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="2"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="rKy-sU-c9O"/>
@@ -898,9 +891,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kor-dV-C4P" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="211.5" y="0.0" width="97" height="96.5"/>
+                                                        <rect key="frame" x="408.5" y="0.0" width="195.5" height="38"/>
                                                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="3"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="Msk-av-SJd"/>
@@ -908,9 +901,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qqa-GN-ufl" customClass="CalculationButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="317.5" y="0.0" width="96.5" height="96.5"/>
+                                                        <rect key="frame" x="613" y="0.0" width="195" height="38"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="+"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="OWP-sx-dm1"/>
@@ -926,12 +919,12 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="s44-cg-laZ" userLabel="Row5">
-                                                <rect key="frame" x="0.0" y="422" width="414" height="96.5"/>
+                                                <rect key="frame" x="0.0" y="187.5" width="808" height="38"/>
                                                 <subviews>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kyq-AB-a16" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="0.0" width="207" height="96.5"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="404" height="38"/>
                                                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="0"/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="vtn-jh-Fre"/>
@@ -939,9 +932,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vgj-gm-wAw" customClass="NumberButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="216" y="0.0" width="94.5" height="96.5"/>
+                                                        <rect key="frame" x="413" y="0.0" width="193" height="38"/>
                                                         <color key="backgroundColor" systemColor="secondaryLabelColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title=","/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="FcG-sh-I9s"/>
@@ -949,9 +942,9 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NQf-Vx-xXH" customClass="CalculationButton" customModule="Calculator" customModuleProvider="target">
-                                                        <rect key="frame" x="319.5" y="0.0" width="94.5" height="96.5"/>
+                                                        <rect key="frame" x="615" y="0.0" width="193" height="38"/>
                                                         <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
                                                         <state key="normal" title="="/>
                                                         <connections>
                                                             <action selector="HoldDown:" destination="BYZ-38-t0r" eventType="touchDown" id="t9k-qH-xtu"/>
@@ -1018,7 +1011,6 @@
                         <outlet property="LanscapeView" destination="4q4-uA-Qxi" id="AvE-Hd-fb0"/>
                         <outlet property="PortraitView" destination="mQ5-kl-8Ma" id="dat-hQ-uTA"/>
                         <outlet property="ResultLabel" destination="gwT-rI-jaf" id="w8m-Nd-gFc"/>
-                        <outlet property="testButton" destination="3kv-kY-VcX" id="afT-wA-ar3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

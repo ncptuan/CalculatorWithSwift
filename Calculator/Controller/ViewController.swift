@@ -9,45 +9,39 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBOutlet weak var ResultLabel: UILabel!
-    @IBOutlet weak var PortraitView: PortraitModeView!
-    @IBOutlet weak var LanscapeView: PortraitModeView!
-    @IBOutlet weak var testButton: NumberButton!
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var portraitView: PortraitModeView!
+    @IBOutlet weak var lanscapeView: PortraitModeView!
     var result = Calculating();
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         updateResult(temp: result);
-        ResultLabel.font = UIFont.systemFont(ofSize: ResultLabel.frame.height/2)
-        ChoiceOriented();
+        resultLabel.font = UIFont.systemFont(ofSize: resultLabel.frame.height/2 * 1.5)
+        choiceOriented();
     }
     
     func updateResult(temp: Calculating) {
-        ResultLabel.text = String(temp.getResult());
-    }
-    
-    override func viewDidAppear(_ animated: Bool) {
-        
+        resultLabel.text = String(temp.getResult());
     }
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
-            super.viewWillTransition(to: size, with: coordinator)
-            ChoiceOriented();
-        }
+        super.viewWillTransition(to: size, with: coordinator)
+        choiceOriented();
+    }
     
     override var preferredStatusBarStyle: UIStatusBarStyle{
         return .lightContent;
     }
 
     @IBAction func HoldRelease(_ sender: UIButton) {
-        ReturnToOriginalColor(Target: sender)
+        returnToOriginalColor(Target: sender)
     }
     
     @IBAction func HoldDown(_ sender: UIButton) {
-        ChangeColorWhenPress(Target: sender)
+        changeColorWhenPress(Target: sender)
         sendMessage(Target: sender)
     }
-    
     
     func sendMessage(Target: UIButton) {
         switch Target.titleLabel?.text {
@@ -96,11 +90,11 @@ class ViewController: UIViewController {
             updateResult(temp: result);
             break;
         case "AS":
-            result.ClearAll();
+            result.clearAll();
             updateResult(temp: result);
             break;
         case "+/-":
-            result.ChangeStage();
+            result.changeStage();
             updateResult(temp: result);
             break;
         case "%":
@@ -124,7 +118,7 @@ class ViewController: UIViewController {
             updateResult(temp: result);
             break;
         case "=":
-            result.MakeACalculating();
+            result.makeACalculating();
             updateResult(temp: result);
             break;
         default:
@@ -133,11 +127,11 @@ class ViewController: UIViewController {
         }
     }
     
-    func ChangeColorWhenPress(Target: UIButton){
+    func changeColorWhenPress(Target: UIButton){
         Target.backgroundColor = UIColor.black;
     }
 
-    func ReturnToOriginalColor(Target: UIButton) {
+    func returnToOriginalColor(Target: UIButton) {
         if (type(of: Target) == type(of: NumberButton())) {
             Target.backgroundColor = Theme.numberButtonBackgroundColor;
         }
@@ -149,13 +143,13 @@ class ViewController: UIViewController {
         }
     }
     
-    func ChoiceOriented() {
+    func choiceOriented() {
         if UIDevice.current.orientation.isLandscape {
-            PortraitView.isHidden = true
-            LanscapeView.isHidden = false
+            portraitView.isHidden = true
+            lanscapeView.isHidden = false
         } else {
-            PortraitView.isHidden = false
-            LanscapeView.isHidden = true
+            portraitView.isHidden = false
+            lanscapeView.isHidden = true
         }
     }
 }

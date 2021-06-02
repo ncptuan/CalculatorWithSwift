@@ -7,9 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0401C72D26675AD200B89AE2 /* AppFontSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0401C72C26675AD200B89AE2 /* AppFontSize.swift */; };
 		044EB9EB265E465D008F1331 /* ModRoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044EB9EA265E465D008F1331 /* ModRoundedButton.swift */; };
 		045BCD4826622E6A00AB862E /* PortraitModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BCD4726622E6A00AB862E /* PortraitModeView.swift */; };
 		045BCD4A2662377400AB862E /* LanScapeModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 045BCD492662377400AB862E /* LanScapeModeView.swift */; };
+		04E2560126673B44006DE01F /* NumberButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E2560026673B44006DE01F /* NumberButton.swift */; };
+		04E2560326673B73006DE01F /* CalculationButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E2560226673B73006DE01F /* CalculationButton.swift */; };
+		04E2560526673B8E006DE01F /* FunctionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E2560426673B8E006DE01F /* FunctionButton.swift */; };
 		04E34C5F266094C5004628A4 /* Calculating.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E34C5E266094C5004628A4 /* Calculating.swift */; };
 		04E34C632660CC37004628A4 /* SideMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E34C622660CC37004628A4 /* SideMenuController.swift */; };
 		04E34C6B2660D8A9004628A4 /* Styles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04E34C6A2660D8A9004628A4 /* Styles.swift */; };
@@ -22,9 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0401C72C26675AD200B89AE2 /* AppFontSize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFontSize.swift; sourceTree = "<group>"; };
 		044EB9EA265E465D008F1331 /* ModRoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModRoundedButton.swift; sourceTree = "<group>"; };
 		045BCD4726622E6A00AB862E /* PortraitModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PortraitModeView.swift; sourceTree = "<group>"; };
 		045BCD492662377400AB862E /* LanScapeModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LanScapeModeView.swift; sourceTree = "<group>"; };
+		04E2560026673B44006DE01F /* NumberButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberButton.swift; sourceTree = "<group>"; };
+		04E2560226673B73006DE01F /* CalculationButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationButton.swift; sourceTree = "<group>"; };
+		04E2560426673B8E006DE01F /* FunctionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionButton.swift; sourceTree = "<group>"; };
 		04E34C5E266094C5004628A4 /* Calculating.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculating.swift; sourceTree = "<group>"; };
 		04E34C622660CC37004628A4 /* SideMenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuController.swift; sourceTree = "<group>"; };
 		04E34C6A2660D8A9004628A4 /* Styles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Styles.swift; sourceTree = "<group>"; };
@@ -49,6 +57,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0401C72B26675A9A00B89AE2 /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				0401C72C26675AD200B89AE2 /* AppFontSize.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
 		045BCD4626622E2600AB862E /* ViewMode */ = {
 			isa = PBXGroup;
 			children = (
@@ -58,12 +74,59 @@
 			path = ViewMode;
 			sourceTree = "<group>";
 		};
-		04E34C642660CD2F004628A4 /* SideBar */ = {
+		04E255FF26673B13006DE01F /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				044EB9EA265E465D008F1331 /* ModRoundedButton.swift */,
+				04E2560026673B44006DE01F /* NumberButton.swift */,
+				04E2560226673B73006DE01F /* CalculationButton.swift */,
+				04E2560426673B8E006DE01F /* FunctionButton.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		04E2560626673C8E006DE01F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				04E34C692660D880004628A4 /* Theme */,
+				04E2560726673CFF006DE01F /* Custom */,
+				04E255FF26673B13006DE01F /* Common */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		04E2560726673CFF006DE01F /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				045BCD4626622E2600AB862E /* ViewMode */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		04E2560826673E08006DE01F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				04E34C5E266094C5004628A4 /* Calculating.swift */,
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		04E2560926674371006DE01F /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				04ECDD19265B45A400A84FAF /* AppDelegate.swift */,
+				04ECDD1B265B45A400A84FAF /* SceneDelegate.swift */,
+			);
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		04E34C642660CD2F004628A4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				04ECDD1D265B45A400A84FAF /* ViewController.swift */,
 				04E34C622660CC37004628A4 /* SideMenuController.swift */,
 			);
-			path = SideBar;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		04E34C692660D880004628A4 /* Theme */ = {
@@ -93,18 +156,15 @@
 		04ECDD18265B45A400A84FAF /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				045BCD4626622E2600AB862E /* ViewMode */,
-				04E34C692660D880004628A4 /* Theme */,
-				04E34C642660CD2F004628A4 /* SideBar */,
-				04ECDD19265B45A400A84FAF /* AppDelegate.swift */,
-				04ECDD1B265B45A400A84FAF /* SceneDelegate.swift */,
-				04ECDD1D265B45A400A84FAF /* ViewController.swift */,
+				0401C72B26675A9A00B89AE2 /* extensions */,
+				04E2560926674371006DE01F /* AppDelegate */,
+				04E2560826673E08006DE01F /* Managers */,
+				04E2560626673C8E006DE01F /* Views */,
+				04E34C642660CD2F004628A4 /* Controller */,
 				04ECDD1F265B45A400A84FAF /* Main.storyboard */,
 				04ECDD22265B45A400A84FAF /* Assets.xcassets */,
 				04ECDD24265B45A400A84FAF /* LaunchScreen.storyboard */,
 				04ECDD27265B45A400A84FAF /* Info.plist */,
-				044EB9EA265E465D008F1331 /* ModRoundedButton.swift */,
-				04E34C5E266094C5004628A4 /* Calculating.swift */,
 			);
 			path = Calculator;
 			sourceTree = "<group>";
@@ -184,9 +244,13 @@
 				04ECDD1E265B45A400A84FAF /* ViewController.swift in Sources */,
 				04E34C632660CC37004628A4 /* SideMenuController.swift in Sources */,
 				04ECDD1A265B45A400A84FAF /* AppDelegate.swift in Sources */,
+				04E2560526673B8E006DE01F /* FunctionButton.swift in Sources */,
+				0401C72D26675AD200B89AE2 /* AppFontSize.swift in Sources */,
 				04E34C5F266094C5004628A4 /* Calculating.swift in Sources */,
 				044EB9EB265E465D008F1331 /* ModRoundedButton.swift in Sources */,
 				045BCD4826622E6A00AB862E /* PortraitModeView.swift in Sources */,
+				04E2560326673B73006DE01F /* CalculationButton.swift in Sources */,
+				04E2560126673B44006DE01F /* NumberButton.swift in Sources */,
 				04ECDD1C265B45A400A84FAF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
