@@ -33,7 +33,7 @@ class Calculating {
         result = "";
     }
     
-    func MakeACalculating() {
+    func makeACalculating() {
         switch myModOperator {
         case "+":
             replaceComma()
@@ -70,7 +70,7 @@ class Calculating {
         }
     }
     
-    func ChangeStage(){
+    func changeStage(){
         if result != "0" {
             result = String(Double(result)! * (-1));
         }
@@ -86,7 +86,7 @@ class Calculating {
         tempValue = tempValue.replacingOccurrences(of: ".", with: ",")
     }
         
-    func ClearAll() {
+    func clearAll() {
         result = "0";
         tempValue = "";
         myModOperator = "";
